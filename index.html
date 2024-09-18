@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classification App</title>
+    <style>
+        #output {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <input type="file" id="imageInput" accept="image/*" onchange="displaySelectedImage()">
+    <button onclick="classifyImage()">Classify Image</button>
+    <div id="output"></div>
+    <img id="selectedImage" style="max-width: 100%; margin-top: 20px; display: none;">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>    
+    <script src="app.js"></script>
+</body>
+</html>
