@@ -4,7 +4,7 @@ var model = undefined;
 
 async function initialize() {
     
-    model = await tf.loadLayersModel('trained-model/model.json');
+    model = await tf.loadLayersModel('model.json');
     
 
 }
